@@ -1,7 +1,7 @@
 # a, b, c = 10, 20, "a"
 # print(a, b, c)
 
-st = "Hello this is your python class everyone"
+# st = "Hello this is your python class everyone"
 # i = st.index("y")
 # j = st.index("y", i+1)
 # k = st.index("y", j+1)
@@ -30,7 +30,18 @@ st = "Hello this is your python class everyone"
 
 # tu[1] = 3       error
 
-dicti = {"Name": "bhavik", "Age": 99, "DOB": "1-1-1000"}
-print(list(dicti))
-print(list(dicti.items()))
-print(list(dicti.values()))
+# dicti = {"Name": "bhavik", "Age": 99, "DOB": "1-1-1000"}
+# print(list(dicti))
+# print(list(dicti.items()))
+# print(list(dicti.values()))
+
+
+# h = "Ram Krishn Hanuman"
+# splitedH = h.split(" ")
+# print(splitedH)
+
+for i in range(1, 11):
+    if i == 5:
+        continue
+    else:
+        print(i)

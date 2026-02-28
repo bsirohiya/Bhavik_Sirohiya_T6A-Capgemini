@@ -17,10 +17,20 @@ sum(a)
 a.index(1, 2)
 a.count(1)
 
-b = "हिन्दी"
-print(b)
 
 ord("a") # for finding ascii value
 
-s1 = {12, 13, 11}
-print(s1)
+
+# Split Function -> Split parts in list format
+
+l = ["P1.py", "first.txt", "T3.py", "TK.txt", "TFK.com"]
+dict = {}
+for i in l:
+    parts = i.split(".")
+    print(parts)
+
+    if parts[1] in dict:
+        dict[parts[1]].append(parts[0])
+    else:
+        dict[parts[1]] = [parts[0]]          
+print(dict)
