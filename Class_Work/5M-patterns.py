@@ -27,7 +27,7 @@ Primary diagonal -> where i == j
 #         if i == j:
 #             print("@", end=" ")
 #         else:
-#             print("#", end=" ")
+#             print("*", end=" ")
 #     print()
 
 
@@ -79,16 +79,40 @@ Task 1:
 *#@
 #@@
 '''
-row = int(input("Enter no of row: "))
-col = int(input("Enter no of col: "))
+# row = int(input("Enter no of row: "))
+# col = int(input("Enter no of col: "))
 
-for i in range(1, row+1):
-    for j in range(1, col+1):
-        if(i+j > row +1):
-            print("@", end="")
-        elif( i+j < row +1):
-            print("*", end="")    
-        elif(i+j == row+1):
-            print("#", end="")   
+# for i in range(1, row+1):
+#     for j in range(1, col+1):
+#         if(i+j > row +1):
+#             print("@", end="")
+#         elif( i+j < row +1):
+#             print("*", end="")    
+#         elif(i+j == row+1):
+#             print("#", end="")   
 
-    print()         
+#     print()         
+
+
+#-----------------------------------------------------------
+
+
+'''
+Task 2: 
+* #
+ # 
+# *
+'''
+# row = int(input("Enter no of row: "))
+# col = int(input("Enter no of col: "))
+
+# for i in range(1, row+1):
+#     for j in range(1, col+1):
+#         if(i+j == row +1):
+#             print("#", end="")
+#         elif( i == j ):
+#             print("*", end="")    
+#         else:
+#             print(" ", end="")   
+
+#     print()      

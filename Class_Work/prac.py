@@ -40,8 +40,10 @@
 # splitedH = h.split(" ")
 # print(splitedH)
 
-for i in range(1, 11):
-    if i == 5:
-        continue
-    else:
-        print(i)
+# for i in range(1, 11):
+#     if i == 5:
+#         continue
+#     else:
+#         print(i)
+
+print(dir(list))
