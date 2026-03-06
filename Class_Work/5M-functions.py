@@ -49,18 +49,67 @@
    
 # print(findNeg())
 
-a = 9
-def kez():
-    global a
-    a = 19
-    print(a)
-    print(id(a))
-    return a
+# a = 9
+# def kez():
+#     global a # Here by declaring it as global, now it has power to change the value of a
+#     a = 19
+#     print(a)
+#     print(id(a))
+#     return a
 
-#main
-print(id(a))
-print(a)
-print(kez())
-print(a)#the global value will not change in the main scope
+# #main
+# print(id(a))
+# print(a)
+# print(kez())
+# print(a)#the global value will not change in the main scope
 
 
+# a = 100
+
+# def fun1():
+#     a = 10
+#     b = 5
+#     print (a+b)
+
+#     def fun2():
+#         b = 500 # this fun can access but can't change it
+#         print(b)
+#     fun2()   
+#     print(b) 
+# fun1()
+
+
+# But if we want to change it we should declare it as nonlocal
+# a = 1
+# def fun1():
+#     a = 10
+#     b = 5
+#     print (a+b)
+
+#     def fun2():
+#         nonlocal b
+#         b = 500 # this fun can access but can't change it
+#         print(b)
+#     fun2()   
+#     print(b) 
+# fun1()
+
+
+# Task1
+# def prodList(li):
+#     prod = 1
+#     for i in li:
+#         prod *= i
+#     return prod
+
+# print(prodList(eval(input("Enter a list"))))    
+
+# Task2 - Print initial index of char present in a given string
+
+def findFirstIndex(string, char):
+    for i in range(0, len(string)):
+        if string[i] == char:
+            return i
+    return "No such character"
+
+print(findFirstIndex(input("Enter a string: "), input("Enter the char to find: ")))
